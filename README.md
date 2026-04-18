@@ -14,7 +14,7 @@ As graph datasets (like OGBN-Products or Reddit) grow to millions of nodes and e
 
 ---
 
-## 🛠️ Methodologies
+##  Methodologies
 
 ### 1. Eigen-based Spectral Sparsification
 We implement **Eigenvector Centrality** using an optimized **Power Iteration** method on the GPU. The algorithm identifies nodes that are most influential within the network's global structure. Edges connected to high-centrality nodes are prioritized, ensuring that the spectral properties of the original graph are approximated in the sparsified version.
@@ -31,7 +31,7 @@ The project utilizes a standard **Graph Convolutional Network (GCN)** architectu
 
 ---
 
-## 🖥️ Experimental Environment (HPC)
+##  Experimental Environment (HPC)
 
 All benchmarks were performed on a **High-Performance Computing (HPC)** cluster to ensure consistent and reproducible results.
 
