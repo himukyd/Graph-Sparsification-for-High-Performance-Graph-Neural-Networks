@@ -1,0 +1,111 @@
+--- STARTING PRODUCTS GLOBAL EIGEN SPARSIFICATION EXPERIMENT ---
+Step 1: Training GCN on Original Graph...
+----------------------------------------------------------
+PROCESSING Keep Fraction: 0.8
+----------------------------------------------------------
+--> Generating ogbn-products_eigen_p0.8.dgl...
+--> [LOG] Loading ogbn-products...
+Original Graph: Graph(num_nodes=2449029, num_edges=123718152,
+      ndata_schemes={'feat': Scheme(shape=(100,), dtype=torch.float32), 'label': Scheme(shape=(), dtype=torch.int64), 'train_mask': Scheme(shape=(), dtype=torch.bool), 'val_mask': Scheme(shape=(), dtype=torch.bool), 'test_mask': Scheme(shape=(), dtype=torch.bool)}
+      edata_schemes={})
+--> [LOG] Computing Eigenvector Centrality on cuda...
+--> [LOG] Converged at iteration 47
+--> [LOG] Eigenvector calculation took 0.3862s
+--> [LOG] Calculating edge scores and sparsifying using Eigenvector strategy...
+--> [LOG] Target edge count: 98974521 / 123718152
+--> [LOG] Ensuring connectivity (Maximum Spanning Tree + Top Edges)...
+--> [LOG] Added 2396371 edges to maintain connectivity.
+--> [LOG] Total edges kept: 98974521
+--> [SUCCESS] Sparsified graph saved to ogbn-products_eigen_p0.8.dgl
+
+========================================
+      GRAPH SPARSIFICATION SUMMARY
+========================================
+Original Graph:  Nodes: 2449029    Edges: 61859076  
+Sparsified Graph: Nodes: 2449029    Edges: 49487260  
+Retention:       80.0% of edges kept
+========================================
+
+--> Training GCN on ogbn-products_eigen_p0.8.dgl...
+----------------------------------------------------------
+PROCESSING Keep Fraction: 0.7
+----------------------------------------------------------
+--> Generating ogbn-products_eigen_p0.7.dgl...
+--> [LOG] Loading ogbn-products...
+Original Graph: Graph(num_nodes=2449029, num_edges=123718152,
+      ndata_schemes={'feat': Scheme(shape=(100,), dtype=torch.float32), 'label': Scheme(shape=(), dtype=torch.int64), 'train_mask': Scheme(shape=(), dtype=torch.bool), 'val_mask': Scheme(shape=(), dtype=torch.bool), 'test_mask': Scheme(shape=(), dtype=torch.bool)}
+      edata_schemes={})
+--> [LOG] Computing Eigenvector Centrality on cuda...
+--> [LOG] Converged at iteration 47
+--> [LOG] Eigenvector calculation took 0.4052s
+--> [LOG] Calculating edge scores and sparsifying using Eigenvector strategy...
+--> [LOG] Target edge count: 86602706 / 123718152
+--> [LOG] Ensuring connectivity (Maximum Spanning Tree + Top Edges)...
+--> [LOG] Added 2396371 edges to maintain connectivity.
+--> [LOG] Total edges kept: 86602706
+--> [SUCCESS] Sparsified graph saved to ogbn-products_eigen_p0.7.dgl
+
+========================================
+      GRAPH SPARSIFICATION SUMMARY
+========================================
+Original Graph:  Nodes: 2449029    Edges: 61859076  
+Sparsified Graph: Nodes: 2449029    Edges: 43301353  
+Retention:       70.0% of edges kept
+========================================
+
+--> Training GCN on ogbn-products_eigen_p0.7.dgl...
+----------------------------------------------------------
+PROCESSING Keep Fraction: 0.6
+----------------------------------------------------------
+--> Generating ogbn-products_eigen_p0.6.dgl...
+--> [LOG] Loading ogbn-products...
+Original Graph: Graph(num_nodes=2449029, num_edges=123718152,
+      ndata_schemes={'feat': Scheme(shape=(100,), dtype=torch.float32), 'label': Scheme(shape=(), dtype=torch.int64), 'train_mask': Scheme(shape=(), dtype=torch.bool), 'val_mask': Scheme(shape=(), dtype=torch.bool), 'test_mask': Scheme(shape=(), dtype=torch.bool)}
+      edata_schemes={})
+--> [LOG] Computing Eigenvector Centrality on cuda...
+--> [LOG] Converged at iteration 47
+--> [LOG] Eigenvector calculation took 0.4040s
+--> [LOG] Calculating edge scores and sparsifying using Eigenvector strategy...
+--> [LOG] Target edge count: 74230891 / 123718152
+--> [LOG] Ensuring connectivity (Maximum Spanning Tree + Top Edges)...
+--> [LOG] Added 2396371 edges to maintain connectivity.
+--> [LOG] Total edges kept: 74230891
+--> [SUCCESS] Sparsified graph saved to ogbn-products_eigen_p0.6.dgl
+
+========================================
+      GRAPH SPARSIFICATION SUMMARY
+========================================
+Original Graph:  Nodes: 2449029    Edges: 61859076  
+Sparsified Graph: Nodes: 2449029    Edges: 37115445  
+Retention:       60.0% of edges kept
+========================================
+
+--> Training GCN on ogbn-products_eigen_p0.6.dgl...
+----------------------------------------------------------
+PROCESSING Keep Fraction: 0.5
+----------------------------------------------------------
+--> Generating ogbn-products_eigen_p0.5.dgl...
+--> [LOG] Loading ogbn-products...
+Original Graph: Graph(num_nodes=2449029, num_edges=123718152,
+      ndata_schemes={'feat': Scheme(shape=(100,), dtype=torch.float32), 'label': Scheme(shape=(), dtype=torch.int64), 'train_mask': Scheme(shape=(), dtype=torch.bool), 'val_mask': Scheme(shape=(), dtype=torch.bool), 'test_mask': Scheme(shape=(), dtype=torch.bool)}
+      edata_schemes={})
+--> [LOG] Computing Eigenvector Centrality on cuda...
+--> [LOG] Converged at iteration 47
+--> [LOG] Eigenvector calculation took 0.4050s
+--> [LOG] Calculating edge scores and sparsifying using Eigenvector strategy...
+--> [LOG] Target edge count: 61859076 / 123718152
+--> [LOG] Ensuring connectivity (Maximum Spanning Tree + Top Edges)...
+--> [LOG] Added 2396371 edges to maintain connectivity.
+--> [LOG] Total edges kept: 61859076
+--> [SUCCESS] Sparsified graph saved to ogbn-products_eigen_p0.5.dgl
+
+========================================
+      GRAPH SPARSIFICATION SUMMARY
+========================================
+Original Graph:  Nodes: 2449029    Edges: 61859076  
+Sparsified Graph: Nodes: 2449029    Edges: 30929538  
+Retention:       50.0% of edges kept
+========================================
+
+--> Training GCN on ogbn-products_eigen_p0.5.dgl...
+--- PRODUCTS GLOBAL EIGEN EXPERIMENT COMPLETE ---

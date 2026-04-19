@@ -1,0 +1,61 @@
+--> [LOG] Graph converted to simple and bidirected (undirected).
+
+========================================
+GCN SPEED TEST: ogbn-products_local_top50_eigen.dgl
+Nodes: 2449029 | Edges: 34705249
+========================================
+Starting training on cuda...
+Epoch 000 | Loss 1.3026 | Val Acc: 0.8522 | Test Acc: 0.6460 | Time: 5.3754s
+Epoch 001 | Loss 0.6319 | Val Acc: 0.8696 | Test Acc: 0.6627 | Time: 5.0518s
+Epoch 002 | Loss 0.5654 | Val Acc: 0.8681 | Test Acc: 0.6661 | Time: 5.0463s
+Epoch 003 | Loss 0.5495 | Val Acc: 0.8672 | Test Acc: 0.6568 | Time: 5.0737s
+Epoch 004 | Loss 0.6113 | Val Acc: 0.8801 | Test Acc: 0.6673 | Time: 5.0992s
+Epoch 005 | Loss 0.4853 | Val Acc: 0.8794 | Test Acc: 0.6611 | Time: 5.2257s
+Epoch 006 | Loss 0.4699 | Val Acc: 0.8803 | Test Acc: 0.6621 | Time: 5.2130s
+Epoch 007 | Loss 0.4837 | Val Acc: 0.8783 | Test Acc: 0.6689 | Time: 5.2328s
+Epoch 008 | Loss 0.4695 | Val Acc: 0.8831 | Test Acc: 0.6575 | Time: 5.2374s
+Epoch 009 | Loss 0.4389 | Val Acc: 0.8847 | Test Acc: 0.6640 | Time: 5.1674s
+Epoch 010 | Loss 0.4355 | Val Acc: 0.8832 | Test Acc: 0.6636 | Time: 5.2423s
+Epoch 011 | Loss 0.4247 | Val Acc: 0.8853 | Test Acc: 0.6587 | Time: 5.2363s
+Epoch 012 | Loss 0.4231 | Val Acc: 0.8816 | Test Acc: 0.6580 | Time: 5.2513s
+Epoch 013 | Loss 0.4258 | Val Acc: 0.8864 | Test Acc: 0.6574 | Time: 5.1135s
+Epoch 014 | Loss 0.4154 | Val Acc: 0.8799 | Test Acc: 0.6538 | Time: 5.4113s
+Epoch 015 | Loss 0.4134 | Val Acc: 0.8760 | Test Acc: 0.6572 | Time: 5.2517s
+Epoch 016 | Loss 0.4322 | Val Acc: 0.8868 | Test Acc: 0.6538 | Time: 5.2722s
+Epoch 017 | Loss 0.4002 | Val Acc: 0.8881 | Test Acc: 0.6592 | Time: 5.2548s
+Epoch 018 | Loss 0.3995 | Val Acc: 0.8884 | Test Acc: 0.6563 | Time: 5.2452s
+Epoch 019 | Loss 0.3966 | Val Acc: 0.8894 | Test Acc: 0.6571 | Time: 5.2554s
+Epoch 020 | Loss 0.3911 | Val Acc: 0.8890 | Test Acc: 0.6578 | Time: 5.2537s
+Epoch 021 | Loss 0.3876 | Val Acc: 0.8888 | Test Acc: 0.6579 | Time: 5.2397s
+Epoch 022 | Loss 0.3867 | Val Acc: 0.8889 | Test Acc: 0.6567 | Time: 5.1918s
+Epoch 023 | Loss 0.3853 | Val Acc: 0.8870 | Test Acc: 0.6525 | Time: 5.2242s
+Epoch 024 | Loss 0.3825 | Val Acc: 0.8887 | Test Acc: 0.6555 | Time: 5.2778s
+Epoch 025 | Loss 0.3865 | Val Acc: 0.8845 | Test Acc: 0.6491 | Time: 5.2591s
+Epoch 026 | Loss 0.4049 | Val Acc: 0.8888 | Test Acc: 0.6586 | Time: 5.1132s
+Epoch 027 | Loss 0.3896 | Val Acc: 0.8885 | Test Acc: 0.6563 | Time: 5.2984s
+Epoch 028 | Loss 0.3854 | Val Acc: 0.8899 | Test Acc: 0.6541 | Time: 5.2813s
+Epoch 029 | Loss 0.3764 | Val Acc: 0.8882 | Test Acc: 0.6482 | Time: 5.1914s
+Epoch 030 | Loss 0.3808 | Val Acc: 0.8864 | Test Acc: 0.6517 | Time: 5.3749s
+Epoch 031 | Loss 0.3722 | Val Acc: 0.8925 | Test Acc: 0.6566 | Time: 5.2729s
+Epoch 032 | Loss 0.3726 | Val Acc: 0.8903 | Test Acc: 0.6539 | Time: 5.2611s
+Epoch 033 | Loss 0.3744 | Val Acc: 0.8857 | Test Acc: 0.6538 | Time: 5.2433s
+Epoch 034 | Loss 0.4006 | Val Acc: 0.8759 | Test Acc: 0.6365 | Time: 5.2574s
+Epoch 035 | Loss 0.4288 | Val Acc: 0.8805 | Test Acc: 0.6472 | Time: 5.2686s
+Epoch 036 | Loss 0.3989 | Val Acc: 0.8909 | Test Acc: 0.6538 | Time: 5.2480s
+Epoch 037 | Loss 0.3689 | Val Acc: 0.8923 | Test Acc: 0.6520 | Time: 5.2434s
+Epoch 038 | Loss 0.3660 | Val Acc: 0.8926 | Test Acc: 0.6544 | Time: 5.2489s
+Epoch 039 | Loss 0.3654 | Val Acc: 0.8889 | Test Acc: 0.6540 | Time: 5.1650s
+Epoch 040 | Loss 0.3697 | Val Acc: 0.8897 | Test Acc: 0.6462 | Time: 5.2540s
+Epoch 041 | Loss 0.3729 | Val Acc: 0.8772 | Test Acc: 0.6434 | Time: 5.2051s
+Epoch 042 | Loss 0.4111 | Val Acc: 0.8884 | Test Acc: 0.6481 | Time: 5.2460s
+Epoch 043 | Loss 0.3790 | Val Acc: 0.8919 | Test Acc: 0.6606 | Time: 5.2046s
+Epoch 044 | Loss 0.3673 | Val Acc: 0.8906 | Test Acc: 0.6500 | Time: 5.3059s
+Epoch 045 | Loss 0.3620 | Val Acc: 0.8896 | Test Acc: 0.6481 | Time: 5.2485s
+Epoch 046 | Loss 0.3588 | Val Acc: 0.8911 | Test Acc: 0.6518 | Time: 5.2682s
+Epoch 047 | Loss 0.3662 | Val Acc: 0.8899 | Test Acc: 0.6478 | Time: 5.1393s
+Epoch 048 | Loss 0.3664 | Val Acc: 0.8949 | Test Acc: 0.6566 | Time: 5.2048s
+Epoch 049 | Loss 0.3614 | Val Acc: 0.8946 | Test Acc: 0.6559 | Time: 5.2553s
+
+TOTAL TRAINING TIME: 877.3157s
+BEST VAL ACCURACY: 0.8949
+TEST ACCURACY (at best val): 0.6566
