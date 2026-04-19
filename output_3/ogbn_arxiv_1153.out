@@ -1,0 +1,157 @@
+--- STARTING OGBN-ARXIV EXPERIMENT ---
+Step 1: Training GCN on Original Graph...
+----------------------------------------------------------
+PROCESSING K=5
+----------------------------------------------------------
+--> Generating ogbn-arxiv_local_top5_eigen.dgl...
+--> [LOG] Loading ogbn-arxiv...
+Original Graph: Graph(num_nodes=169343, num_edges=2315598,
+      ndata_schemes={'year': Scheme(shape=(1,), dtype=torch.int64), 'feat': Scheme(shape=(128,), dtype=torch.float32), 'label': Scheme(shape=(), dtype=torch.int64), 'train_mask': Scheme(shape=(), dtype=torch.bool), 'val_mask': Scheme(shape=(), dtype=torch.bool), 'test_mask': Scheme(shape=(), dtype=torch.bool)}
+      edata_schemes={})
+--> [LOG] Computing Eigenvector Centrality on cuda...
+--> [LOG] Converged at iteration 78
+--> [LOG] Eigenvector calculation took 0.0750s
+--> [LOG] Applying Local Top-5 Sparsification...
+
+========================================
+      LOCAL TOP-5 SUMMARY
+========================================
+Original Graph:  Nodes: 169343     Edges: 1157799   
+Sparsified Graph: Nodes: 169343     Edges: 332882    
+Strategy:        Each node kept up to 5 neighbors based on Eigen Centrality.
+========================================
+
+--> Training GCN on ogbn-arxiv_local_top5_eigen.dgl...
+----------------------------------------------------------
+PROCESSING K=10
+----------------------------------------------------------
+--> Generating ogbn-arxiv_local_top10_eigen.dgl...
+--> [LOG] Loading ogbn-arxiv...
+Original Graph: Graph(num_nodes=169343, num_edges=2315598,
+      ndata_schemes={'year': Scheme(shape=(1,), dtype=torch.int64), 'feat': Scheme(shape=(128,), dtype=torch.float32), 'label': Scheme(shape=(), dtype=torch.int64), 'train_mask': Scheme(shape=(), dtype=torch.bool), 'val_mask': Scheme(shape=(), dtype=torch.bool), 'test_mask': Scheme(shape=(), dtype=torch.bool)}
+      edata_schemes={})
+--> [LOG] Computing Eigenvector Centrality on cuda...
+--> [LOG] Converged at iteration 78
+--> [LOG] Eigenvector calculation took 0.0619s
+--> [LOG] Applying Local Top-10 Sparsification...
+
+========================================
+      LOCAL TOP-10 SUMMARY
+========================================
+Original Graph:  Nodes: 169343     Edges: 1157799   
+Sparsified Graph: Nodes: 169343     Edges: 523541    
+Strategy:        Each node kept up to 10 neighbors based on Eigen Centrality.
+========================================
+
+--> Training GCN on ogbn-arxiv_local_top10_eigen.dgl...
+----------------------------------------------------------
+PROCESSING K=25
+----------------------------------------------------------
+--> Generating ogbn-arxiv_local_top25_eigen.dgl...
+--> [LOG] Loading ogbn-arxiv...
+Original Graph: Graph(num_nodes=169343, num_edges=2315598,
+      ndata_schemes={'year': Scheme(shape=(1,), dtype=torch.int64), 'feat': Scheme(shape=(128,), dtype=torch.float32), 'label': Scheme(shape=(), dtype=torch.int64), 'train_mask': Scheme(shape=(), dtype=torch.bool), 'val_mask': Scheme(shape=(), dtype=torch.bool), 'test_mask': Scheme(shape=(), dtype=torch.bool)}
+      edata_schemes={})
+--> [LOG] Computing Eigenvector Centrality on cuda...
+--> [LOG] Converged at iteration 79
+--> [LOG] Eigenvector calculation took 0.0584s
+--> [LOG] Applying Local Top-25 Sparsification...
+
+========================================
+      LOCAL TOP-25 SUMMARY
+========================================
+Original Graph:  Nodes: 169343     Edges: 1157799   
+Sparsified Graph: Nodes: 169343     Edges: 786835    
+Strategy:        Each node kept up to 25 neighbors based on Eigen Centrality.
+========================================
+
+--> Training GCN on ogbn-arxiv_local_top25_eigen.dgl...
+----------------------------------------------------------
+PROCESSING K=50
+----------------------------------------------------------
+--> Generating ogbn-arxiv_local_top50_eigen.dgl...
+--> [LOG] Loading ogbn-arxiv...
+Original Graph: Graph(num_nodes=169343, num_edges=2315598,
+      ndata_schemes={'year': Scheme(shape=(1,), dtype=torch.int64), 'feat': Scheme(shape=(128,), dtype=torch.float32), 'label': Scheme(shape=(), dtype=torch.int64), 'train_mask': Scheme(shape=(), dtype=torch.bool), 'val_mask': Scheme(shape=(), dtype=torch.bool), 'test_mask': Scheme(shape=(), dtype=torch.bool)}
+      edata_schemes={})
+--> [LOG] Computing Eigenvector Centrality on cuda...
+--> [LOG] Converged at iteration 78
+--> [LOG] Eigenvector calculation took 0.0736s
+--> [LOG] Applying Local Top-50 Sparsification...
+
+========================================
+      LOCAL TOP-50 SUMMARY
+========================================
+Original Graph:  Nodes: 169343     Edges: 1157799   
+Sparsified Graph: Nodes: 169343     Edges: 916585    
+Strategy:        Each node kept up to 50 neighbors based on Eigen Centrality.
+========================================
+
+--> Training GCN on ogbn-arxiv_local_top50_eigen.dgl...
+----------------------------------------------------------
+PROCESSING K=100
+----------------------------------------------------------
+--> Generating ogbn-arxiv_local_top100_eigen.dgl...
+--> [LOG] Loading ogbn-arxiv...
+Original Graph: Graph(num_nodes=169343, num_edges=2315598,
+      ndata_schemes={'year': Scheme(shape=(1,), dtype=torch.int64), 'feat': Scheme(shape=(128,), dtype=torch.float32), 'label': Scheme(shape=(), dtype=torch.int64), 'train_mask': Scheme(shape=(), dtype=torch.bool), 'val_mask': Scheme(shape=(), dtype=torch.bool), 'test_mask': Scheme(shape=(), dtype=torch.bool)}
+      edata_schemes={})
+--> [LOG] Computing Eigenvector Centrality on cuda...
+--> [LOG] Converged at iteration 79
+--> [LOG] Eigenvector calculation took 0.0760s
+--> [LOG] Applying Local Top-100 Sparsification...
+
+========================================
+      LOCAL TOP-100 SUMMARY
+========================================
+Original Graph:  Nodes: 169343     Edges: 1157799   
+Sparsified Graph: Nodes: 169343     Edges: 994308    
+Strategy:        Each node kept up to 100 neighbors based on Eigen Centrality.
+========================================
+
+--> Training GCN on ogbn-arxiv_local_top100_eigen.dgl...
+----------------------------------------------------------
+PROCESSING K=250
+----------------------------------------------------------
+--> Generating ogbn-arxiv_local_top250_eigen.dgl...
+--> [LOG] Loading ogbn-arxiv...
+Original Graph: Graph(num_nodes=169343, num_edges=2315598,
+      ndata_schemes={'year': Scheme(shape=(1,), dtype=torch.int64), 'feat': Scheme(shape=(128,), dtype=torch.float32), 'label': Scheme(shape=(), dtype=torch.int64), 'train_mask': Scheme(shape=(), dtype=torch.bool), 'val_mask': Scheme(shape=(), dtype=torch.bool), 'test_mask': Scheme(shape=(), dtype=torch.bool)}
+      edata_schemes={})
+--> [LOG] Computing Eigenvector Centrality on cuda...
+--> [LOG] Converged at iteration 78
+--> [LOG] Eigenvector calculation took 0.0746s
+--> [LOG] Applying Local Top-250 Sparsification...
+
+========================================
+      LOCAL TOP-250 SUMMARY
+========================================
+Original Graph:  Nodes: 169343     Edges: 1157799   
+Sparsified Graph: Nodes: 169343     Edges: 1060146   
+Strategy:        Each node kept up to 250 neighbors based on Eigen Centrality.
+========================================
+
+--> Training GCN on ogbn-arxiv_local_top250_eigen.dgl...
+----------------------------------------------------------
+PROCESSING K=500
+----------------------------------------------------------
+--> Generating ogbn-arxiv_local_top500_eigen.dgl...
+--> [LOG] Loading ogbn-arxiv...
+Original Graph: Graph(num_nodes=169343, num_edges=2315598,
+      ndata_schemes={'year': Scheme(shape=(1,), dtype=torch.int64), 'feat': Scheme(shape=(128,), dtype=torch.float32), 'label': Scheme(shape=(), dtype=torch.int64), 'train_mask': Scheme(shape=(), dtype=torch.bool), 'val_mask': Scheme(shape=(), dtype=torch.bool), 'test_mask': Scheme(shape=(), dtype=torch.bool)}
+      edata_schemes={})
+--> [LOG] Computing Eigenvector Centrality on cuda...
+--> [LOG] Converged at iteration 79
+--> [LOG] Eigenvector calculation took 0.0743s
+--> [LOG] Applying Local Top-500 Sparsification...
+
+========================================
+      LOCAL TOP-500 SUMMARY
+========================================
+Original Graph:  Nodes: 169343     Edges: 1157799   
+Sparsified Graph: Nodes: 169343     Edges: 1093218   
+Strategy:        Each node kept up to 500 neighbors based on Eigen Centrality.
+========================================
+
+--> Training GCN on ogbn-arxiv_local_top500_eigen.dgl...
+--- OGBN-ARXIV EXPERIMENT COMPLETE ---

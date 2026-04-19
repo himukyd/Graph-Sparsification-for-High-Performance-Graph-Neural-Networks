@@ -1,0 +1,31 @@
+--> [LOG] Graph converted to simple and bidirected (undirected).
+
+========================================
+GCN SPEED TEST: ogbn-arxiv_local_top500_eigen.dgl
+Nodes: 169343 | Edges: 1177890
+========================================
+Starting training on cuda...
+Epoch 000 | Loss 2.3135 | Val Acc: 0.6123 | Test Acc: 0.6110 | Time: 0.8309s
+Epoch 001 | Loss 1.5974 | Val Acc: 0.6495 | Test Acc: 0.6411 | Time: 0.5864s
+Epoch 002 | Loss 1.4196 | Val Acc: 0.6543 | Test Acc: 0.6368 | Time: 0.5706s
+Epoch 003 | Loss 1.3421 | Val Acc: 0.6669 | Test Acc: 0.6557 | Time: 0.5892s
+Epoch 004 | Loss 1.2887 | Val Acc: 0.6733 | Test Acc: 0.6603 | Time: 0.5890s
+Epoch 005 | Loss 1.2568 | Val Acc: 0.6732 | Test Acc: 0.6570 | Time: 0.5931s
+Epoch 006 | Loss 1.2287 | Val Acc: 0.6788 | Test Acc: 0.6677 | Time: 0.6115s
+Epoch 007 | Loss 1.2111 | Val Acc: 0.6845 | Test Acc: 0.6715 | Time: 0.5844s
+Epoch 008 | Loss 1.1898 | Val Acc: 0.6904 | Test Acc: 0.6841 | Time: 0.6005s
+Epoch 009 | Loss 1.1732 | Val Acc: 0.6905 | Test Acc: 0.6813 | Time: 0.5855s
+Epoch 010 | Loss 1.1602 | Val Acc: 0.6845 | Test Acc: 0.6687 | Time: 0.5804s
+Epoch 011 | Loss 1.1498 | Val Acc: 0.6940 | Test Acc: 0.6901 | Time: 0.5620s
+Epoch 012 | Loss 1.1377 | Val Acc: 0.6899 | Test Acc: 0.6802 | Time: 0.5836s
+Epoch 013 | Loss 1.1319 | Val Acc: 0.6913 | Test Acc: 0.6750 | Time: 0.5787s
+Epoch 014 | Loss 1.1255 | Val Acc: 0.6957 | Test Acc: 0.6840 | Time: 0.6726s
+Epoch 015 | Loss 1.1155 | Val Acc: 0.6948 | Test Acc: 0.6833 | Time: 0.6085s
+Epoch 016 | Loss 1.1098 | Val Acc: 0.6973 | Test Acc: 0.6827 | Time: 0.5853s
+Epoch 017 | Loss 1.1027 | Val Acc: 0.6957 | Test Acc: 0.6799 | Time: 0.6059s
+Epoch 018 | Loss 1.1006 | Val Acc: 0.6946 | Test Acc: 0.6836 | Time: 0.5799s
+Epoch 019 | Loss 1.0952 | Val Acc: 0.6963 | Test Acc: 0.6865 | Time: 0.5941s
+
+TOTAL TRAINING TIME: 18.4093s
+BEST VAL ACCURACY: 0.6973
+TEST ACCURACY (at best val): 0.6827
