@@ -1,0 +1,1 @@
+/var/spool/slurm/slurmd/job01157/slurm_script: line 25: 601240 Aborted                 (core dumped) python gcn_node_classification.py --dataset $DATASET --train_graph $SPARSE_GRAPH --epoch $EPOCHS > ./output/reddit_eigen_p${P}_${SLURM_JOB_ID}.txt

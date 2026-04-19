@@ -1,0 +1,133 @@
+--- STARTING FLEXIBLE GCN SPEED COMPARISON ---
+Step 1: Training on Original Graph...
+----------------------------------------------------------
+PROCESSING K=5
+----------------------------------------------------------
+--> Training GCN on reddit_local_top5_eigen.dgl...
+--> Done. Results in ./output/gcn_sparsified_K5_1151.txt
+----------------------------------------------------------
+PROCESSING K=10
+----------------------------------------------------------
+--> Training GCN on reddit_local_top10_eigen.dgl...
+--> Done. Results in ./output/gcn_sparsified_K10_1151.txt
+----------------------------------------------------------
+PROCESSING K=25
+----------------------------------------------------------
+--> Training GCN on reddit_local_top25_eigen.dgl...
+--> Done. Results in ./output/gcn_sparsified_K25_1151.txt
+----------------------------------------------------------
+PROCESSING K=50
+----------------------------------------------------------
+--> Graph reddit_local_top50_eigen.dgl not found. Generating now...
+--> [LOG] Loading reddit...
+Original Graph: Graph(num_nodes=232965, num_edges=114615892,
+      ndata_schemes={'label': Scheme(shape=(), dtype=torch.int64), 'feat': Scheme(shape=(602,), dtype=torch.float32), 'test_mask': Scheme(shape=(), dtype=torch.bool), 'val_mask': Scheme(shape=(), dtype=torch.bool), 'train_mask': Scheme(shape=(), dtype=torch.bool)}
+      edata_schemes={})
+--> [LOG] Computing Eigenvector Centrality on cuda...
+--> [LOG] Converged at iteration 30
+--> [LOG] Eigenvector calculation took 0.1685s
+--> [LOG] Applying Local Top-50 Sparsification...
+
+========================================
+      LOCAL TOP-50 SUMMARY
+========================================
+Original Graph:  Nodes: 232965     Edges: 57307946  
+Sparsified Graph: Nodes: 232965     Edges: 5175409   
+Strategy:        Each node kept up to 50 neighbors based on Eigen Centrality.
+========================================
+
+--> Training GCN on reddit_local_top50_eigen.dgl...
+--> Done. Results in ./output/gcn_sparsified_K50_1151.txt
+----------------------------------------------------------
+PROCESSING K=100
+----------------------------------------------------------
+--> Graph reddit_local_top100_eigen.dgl not found. Generating now...
+--> [LOG] Loading reddit...
+Original Graph: Graph(num_nodes=232965, num_edges=114615892,
+      ndata_schemes={'label': Scheme(shape=(), dtype=torch.int64), 'feat': Scheme(shape=(602,), dtype=torch.float32), 'test_mask': Scheme(shape=(), dtype=torch.bool), 'val_mask': Scheme(shape=(), dtype=torch.bool), 'train_mask': Scheme(shape=(), dtype=torch.bool)}
+      edata_schemes={})
+--> [LOG] Computing Eigenvector Centrality on cuda...
+--> [LOG] Converged at iteration 30
+--> [LOG] Eigenvector calculation took 0.1508s
+--> [LOG] Applying Local Top-100 Sparsification...
+
+========================================
+      LOCAL TOP-100 SUMMARY
+========================================
+Original Graph:  Nodes: 232965     Edges: 57307946  
+Sparsified Graph: Nodes: 232965     Edges: 9533490   
+Strategy:        Each node kept up to 100 neighbors based on Eigen Centrality.
+========================================
+
+--> Training GCN on reddit_local_top100_eigen.dgl...
+--> Done. Results in ./output/gcn_sparsified_K100_1151.txt
+----------------------------------------------------------
+PROCESSING K=250
+----------------------------------------------------------
+--> Graph reddit_local_top250_eigen.dgl not found. Generating now...
+--> [LOG] Loading reddit...
+Original Graph: Graph(num_nodes=232965, num_edges=114615892,
+      ndata_schemes={'label': Scheme(shape=(), dtype=torch.int64), 'feat': Scheme(shape=(602,), dtype=torch.float32), 'test_mask': Scheme(shape=(), dtype=torch.bool), 'val_mask': Scheme(shape=(), dtype=torch.bool), 'train_mask': Scheme(shape=(), dtype=torch.bool)}
+      edata_schemes={})
+--> [LOG] Computing Eigenvector Centrality on cuda...
+--> [LOG] Converged at iteration 30
+--> [LOG] Eigenvector calculation took 0.1502s
+--> [LOG] Applying Local Top-250 Sparsification...
+
+========================================
+      LOCAL TOP-250 SUMMARY
+========================================
+Original Graph:  Nodes: 232965     Edges: 57307946  
+Sparsified Graph: Nodes: 232965     Edges: 19575495  
+Strategy:        Each node kept up to 250 neighbors based on Eigen Centrality.
+========================================
+
+--> Training GCN on reddit_local_top250_eigen.dgl...
+--> Done. Results in ./output/gcn_sparsified_K250_1151.txt
+----------------------------------------------------------
+PROCESSING K=500
+----------------------------------------------------------
+--> Graph reddit_local_top500_eigen.dgl not found. Generating now...
+--> [LOG] Loading reddit...
+Original Graph: Graph(num_nodes=232965, num_edges=114615892,
+      ndata_schemes={'label': Scheme(shape=(), dtype=torch.int64), 'feat': Scheme(shape=(602,), dtype=torch.float32), 'test_mask': Scheme(shape=(), dtype=torch.bool), 'val_mask': Scheme(shape=(), dtype=torch.bool), 'train_mask': Scheme(shape=(), dtype=torch.bool)}
+      edata_schemes={})
+--> [LOG] Computing Eigenvector Centrality on cuda...
+--> [LOG] Converged at iteration 30
+--> [LOG] Eigenvector calculation took 0.1493s
+--> [LOG] Applying Local Top-500 Sparsification...
+
+========================================
+      LOCAL TOP-500 SUMMARY
+========================================
+Original Graph:  Nodes: 232965     Edges: 57307946  
+Sparsified Graph: Nodes: 232965     Edges: 30481970  
+Strategy:        Each node kept up to 500 neighbors based on Eigen Centrality.
+========================================
+
+--> Training GCN on reddit_local_top500_eigen.dgl...
+--> Done. Results in ./output/gcn_sparsified_K500_1151.txt
+----------------------------------------------------------
+PROCESSING K=1000
+----------------------------------------------------------
+--> Graph reddit_local_top1000_eigen.dgl not found. Generating now...
+--> [LOG] Loading reddit...
+Original Graph: Graph(num_nodes=232965, num_edges=114615892,
+      ndata_schemes={'label': Scheme(shape=(), dtype=torch.int64), 'feat': Scheme(shape=(602,), dtype=torch.float32), 'test_mask': Scheme(shape=(), dtype=torch.bool), 'val_mask': Scheme(shape=(), dtype=torch.bool), 'train_mask': Scheme(shape=(), dtype=torch.bool)}
+      edata_schemes={})
+--> [LOG] Computing Eigenvector Centrality on cuda...
+--> [LOG] Converged at iteration 30
+--> [LOG] Eigenvector calculation took 0.1783s
+--> [LOG] Applying Local Top-1000 Sparsification...
+
+========================================
+      LOCAL TOP-1000 SUMMARY
+========================================
+Original Graph:  Nodes: 232965     Edges: 57307946  
+Sparsified Graph: Nodes: 232965     Edges: 42183146  
+Strategy:        Each node kept up to 1000 neighbors based on Eigen Centrality.
+========================================
+
+--> Training GCN on reddit_local_top1000_eigen.dgl...
+--> Done. Results in ./output/gcn_sparsified_K1000_1151.txt
+--- ALL GCN SPEED EXPERIMENTS COMPLETE ---

@@ -1,0 +1,111 @@
+--- STARTING REDDIT GLOBAL EIGEN SPARSIFICATION EXPERIMENT ---
+Step 1: Training GCN on Original Graph...
+----------------------------------------------------------
+PROCESSING Keep Fraction: 0.8
+----------------------------------------------------------
+--> Generating reddit_eigen_p0.8.dgl...
+--> [LOG] Loading reddit...
+Original Graph: Graph(num_nodes=232965, num_edges=114615892,
+      ndata_schemes={'label': Scheme(shape=(), dtype=torch.int64), 'feat': Scheme(shape=(602,), dtype=torch.float32), 'test_mask': Scheme(shape=(), dtype=torch.bool), 'val_mask': Scheme(shape=(), dtype=torch.bool), 'train_mask': Scheme(shape=(), dtype=torch.bool)}
+      edata_schemes={})
+--> [LOG] Computing Eigenvector Centrality on cuda...
+--> [LOG] Converged at iteration 30
+--> [LOG] Eigenvector calculation took 0.1534s
+--> [LOG] Calculating edge scores and sparsifying using Eigenvector strategy...
+--> [LOG] Target edge count: 91692713 / 114615892
+--> [LOG] Ensuring connectivity (Maximum Spanning Tree + Top Edges)...
+--> [LOG] Added 232964 edges to maintain connectivity.
+--> [LOG] Total edges kept: 91692713
+--> [SUCCESS] Sparsified graph saved to reddit_eigen_p0.8.dgl
+
+========================================
+      GRAPH SPARSIFICATION SUMMARY
+========================================
+Original Graph:  Nodes: 232965     Edges: 57307946  
+Sparsified Graph: Nodes: 232965     Edges: 45846356  
+Retention:       80.0% of edges kept
+========================================
+
+--> Training GCN on reddit_eigen_p0.8.dgl...
+----------------------------------------------------------
+PROCESSING Keep Fraction: 0.7
+----------------------------------------------------------
+--> Generating reddit_eigen_p0.7.dgl...
+--> [LOG] Loading reddit...
+Original Graph: Graph(num_nodes=232965, num_edges=114615892,
+      ndata_schemes={'label': Scheme(shape=(), dtype=torch.int64), 'feat': Scheme(shape=(602,), dtype=torch.float32), 'test_mask': Scheme(shape=(), dtype=torch.bool), 'val_mask': Scheme(shape=(), dtype=torch.bool), 'train_mask': Scheme(shape=(), dtype=torch.bool)}
+      edata_schemes={})
+--> [LOG] Computing Eigenvector Centrality on cuda...
+--> [LOG] Converged at iteration 30
+--> [LOG] Eigenvector calculation took 0.2123s
+--> [LOG] Calculating edge scores and sparsifying using Eigenvector strategy...
+--> [LOG] Target edge count: 80231124 / 114615892
+--> [LOG] Ensuring connectivity (Maximum Spanning Tree + Top Edges)...
+--> [LOG] Added 232964 edges to maintain connectivity.
+--> [LOG] Total edges kept: 80231124
+--> [SUCCESS] Sparsified graph saved to reddit_eigen_p0.7.dgl
+
+========================================
+      GRAPH SPARSIFICATION SUMMARY
+========================================
+Original Graph:  Nodes: 232965     Edges: 57307946  
+Sparsified Graph: Nodes: 232965     Edges: 40115562  
+Retention:       70.0% of edges kept
+========================================
+
+--> Training GCN on reddit_eigen_p0.7.dgl...
+----------------------------------------------------------
+PROCESSING Keep Fraction: 0.6
+----------------------------------------------------------
+--> Generating reddit_eigen_p0.6.dgl...
+--> [LOG] Loading reddit...
+Original Graph: Graph(num_nodes=232965, num_edges=114615892,
+      ndata_schemes={'label': Scheme(shape=(), dtype=torch.int64), 'feat': Scheme(shape=(602,), dtype=torch.float32), 'test_mask': Scheme(shape=(), dtype=torch.bool), 'val_mask': Scheme(shape=(), dtype=torch.bool), 'train_mask': Scheme(shape=(), dtype=torch.bool)}
+      edata_schemes={})
+--> [LOG] Computing Eigenvector Centrality on cuda...
+--> [LOG] Converged at iteration 30
+--> [LOG] Eigenvector calculation took 0.1922s
+--> [LOG] Calculating edge scores and sparsifying using Eigenvector strategy...
+--> [LOG] Target edge count: 68769535 / 114615892
+--> [LOG] Ensuring connectivity (Maximum Spanning Tree + Top Edges)...
+--> [LOG] Added 232964 edges to maintain connectivity.
+--> [LOG] Total edges kept: 68769535
+--> [SUCCESS] Sparsified graph saved to reddit_eigen_p0.6.dgl
+
+========================================
+      GRAPH SPARSIFICATION SUMMARY
+========================================
+Original Graph:  Nodes: 232965     Edges: 57307946  
+Sparsified Graph: Nodes: 232965     Edges: 34384767  
+Retention:       60.0% of edges kept
+========================================
+
+--> Training GCN on reddit_eigen_p0.6.dgl...
+----------------------------------------------------------
+PROCESSING Keep Fraction: 0.5
+----------------------------------------------------------
+--> Generating reddit_eigen_p0.5.dgl...
+--> [LOG] Loading reddit...
+Original Graph: Graph(num_nodes=232965, num_edges=114615892,
+      ndata_schemes={'label': Scheme(shape=(), dtype=torch.int64), 'feat': Scheme(shape=(602,), dtype=torch.float32), 'test_mask': Scheme(shape=(), dtype=torch.bool), 'val_mask': Scheme(shape=(), dtype=torch.bool), 'train_mask': Scheme(shape=(), dtype=torch.bool)}
+      edata_schemes={})
+--> [LOG] Computing Eigenvector Centrality on cuda...
+--> [LOG] Converged at iteration 30
+--> [LOG] Eigenvector calculation took 0.2188s
+--> [LOG] Calculating edge scores and sparsifying using Eigenvector strategy...
+--> [LOG] Target edge count: 57307946 / 114615892
+--> [LOG] Ensuring connectivity (Maximum Spanning Tree + Top Edges)...
+--> [LOG] Added 232964 edges to maintain connectivity.
+--> [LOG] Total edges kept: 57307946
+--> [SUCCESS] Sparsified graph saved to reddit_eigen_p0.5.dgl
+
+========================================
+      GRAPH SPARSIFICATION SUMMARY
+========================================
+Original Graph:  Nodes: 232965     Edges: 57307946  
+Sparsified Graph: Nodes: 232965     Edges: 28653973  
+Retention:       50.0% of edges kept
+========================================
+
+--> Training GCN on reddit_eigen_p0.5.dgl...
+--- REDDIT GLOBAL EIGEN EXPERIMENT COMPLETE ---
