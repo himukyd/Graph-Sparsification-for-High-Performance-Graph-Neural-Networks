@@ -11,7 +11,7 @@ module load cuda-12.1
 source /data/himanshu/env_him/bin/activate
 
 DATASET="ogbn-arxiv"
-EPOCHS=20
+EPOCHS=50
 
 echo "--- STARTING OGBN-ARXIV EXPERIMENT ---"
 
