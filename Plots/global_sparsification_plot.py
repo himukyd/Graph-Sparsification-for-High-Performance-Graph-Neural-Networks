@@ -9,8 +9,8 @@ x = np.arange(len(sparsification))
 # Note: Reddit K=0.7 has only edges, Acc & Time are missing → None
 datasets = {
     'Reddit': {
-        'acc':  [0.9410, 0.8110, 0.8461, None,   0.8999],
-        'time': [2656.42, 1562.73, 1906.34, None, 2532.62],
+        'acc':  [0.9410, 0.8110, 0.8461, 0.8778,   0.8999],
+        'time': [2656.42, 1562.73, 1906.34, 2187.54, 2532.62],
         'edges':[57424428, 28770455, 34501250, 40232044, 45962839],
     },
     'OGBN-Products': {
