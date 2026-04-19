@@ -1,0 +1,19 @@
+--- STARTING ARXIV GLOBAL EIGEN SPARSIFICATION EXPERIMENT ---
+Step 1: Training GCN on Original Graph...
+----------------------------------------------------------
+PROCESSING Keep Fraction: 0.8
+----------------------------------------------------------
+--> Training GCN on ogbn-arxiv_eigen_p0.8.dgl...
+----------------------------------------------------------
+PROCESSING Keep Fraction: 0.7
+----------------------------------------------------------
+--> Training GCN on ogbn-arxiv_eigen_p0.7.dgl...
+----------------------------------------------------------
+PROCESSING Keep Fraction: 0.6
+----------------------------------------------------------
+--> Training GCN on ogbn-arxiv_eigen_p0.6.dgl...
+----------------------------------------------------------
+PROCESSING Keep Fraction: 0.5
+----------------------------------------------------------
+--> Training GCN on ogbn-arxiv_eigen_p0.5.dgl...
+--- ARXIV GLOBAL EIGEN EXPERIMENT COMPLETE ---
