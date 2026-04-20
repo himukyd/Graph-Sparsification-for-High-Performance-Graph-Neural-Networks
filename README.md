@@ -10,7 +10,7 @@ As graph datasets (like OGBN-Products or Reddit) grow to millions of nodes and e
 
 1.  **Spectral (Eigen) Sparsification:** Uses Eigenvector Centrality and Power Iteration to identify and preserve the structural "backbone" of the graph.
 2.  **Local Top-K Sparsification:** A node-centric approach that ensures local connectivity is preserved by keeping the most significant edges for every individual node.
-3.  **Random Sparsification:** A stochastic baseline to quantify the performance gain of informed sparsification methods over simple uniform edge removal.
+
 
 ---
 
