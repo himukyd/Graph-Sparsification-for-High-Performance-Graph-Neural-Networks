@@ -98,5 +98,5 @@ python gcn_node_classification.py --dataset ogbn-arxiv --gpu 0
 ##  Evaluation Metrics
 We measure the success of our sparsification methods using three primary KPIs:
 - **Accuracy Retention:** Percentage of baseline accuracy maintained after $X\%$ edge removal.
-- **Training Speedup:** Reduction in time per epoch during the GNN training phase.
+- **Training Speedup:** Reduction in time per epoch during the GNN training  phase.
 - **Memory Efficiency:** 
