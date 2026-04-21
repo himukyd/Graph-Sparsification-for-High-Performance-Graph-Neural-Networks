@@ -30,6 +30,18 @@ The project utilizes a standard **Graph Convolutional Network (GCN)** architectu
 - Evaluating accuracy, convergence speed, and memory usage against the full-graph baseline.
 
 ---
+## Repository Structure
+
+- `Sparsification_code/`
+	- `eigen_sparsification.py`: global spectral-style sparsification using eigenvector centrality scores.
+	- `local_topk_sparsification.py`: per-node local top-k edge selection using centrality-derived scores.
+- `GCN_code/`
+	- `gcn_node_classification.py`: GCN training and evaluation on original or sparsified graphs.
+- `Run_commands_sh/`
+	- SLURM scripts for dataset-wise experiment batches.
+- `Plots/`
+	- Plot scripts for edge-accuracy and sparsification visualizations.
+
 
 ##  Experimental Environment (HPC)
 
