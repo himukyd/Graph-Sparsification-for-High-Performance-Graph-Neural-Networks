@@ -1,0 +1,26 @@
+--- STARTING YELP EXPERIMENT ---
+Step 1: Training GCN on Original Graph...
+----------------------------------------------------------
+PROCESSING K=168
+----------------------------------------------------------
+--> Generating yelp_local_top168_eigen.dgl...
+--> [LOG] Loading yelp...
+Done loading data from cached files.
+Original Graph: Graph(num_nodes=45954, num_edges=7693958,
+      ndata_schemes={'_ID': Scheme(shape=(), dtype=torch.int64), '_TYPE': Scheme(shape=(), dtype=torch.int64), 'feat': Scheme(shape=(32,), dtype=torch.float32), 'label': Scheme(shape=(), dtype=torch.int64), 'train_mask': Scheme(shape=(), dtype=torch.uint8), 'val_mask': Scheme(shape=(), dtype=torch.uint8), 'test_mask': Scheme(shape=(), dtype=torch.uint8)}
+      edata_schemes={})
+--> [LOG] Computing Eigenvector Centrality on cuda...
+--> [LOG] Converged at iteration 47
+--> [LOG] Eigenvector calculation took 0.0831s
+--> [LOG] Applying Local Top-168 Sparsification...
+
+========================================
+      LOCAL TOP-168 SUMMARY
+========================================
+Original Graph:  Nodes: 45954      Edges: 3846979   
+Sparsified Graph: Nodes: 45954      Edges: 2944617   
+Strategy:        Each node kept up to 168 neighbors based on Eigen Centrality.
+========================================
+
+--> Training GCN on yelp_local_top168_eigen.dgl...
+--- YELP EXPERIMENT COMPLETE ---

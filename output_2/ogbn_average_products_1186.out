@@ -1,0 +1,25 @@
+--- STARTING OGBN-PRODUCTS EXPERIMENT ---
+Step 1: Training GCN on Original Graph...
+----------------------------------------------------------
+PROCESSING K=52
+----------------------------------------------------------
+--> Generating ogbn-products_local_top52_eigen.dgl...
+--> [LOG] Loading ogbn-products...
+Original Graph: Graph(num_nodes=2449029, num_edges=123718152,
+      ndata_schemes={'feat': Scheme(shape=(100,), dtype=torch.float32), 'label': Scheme(shape=(), dtype=torch.int64), 'train_mask': Scheme(shape=(), dtype=torch.bool), 'val_mask': Scheme(shape=(), dtype=torch.bool), 'test_mask': Scheme(shape=(), dtype=torch.bool)}
+      edata_schemes={})
+--> [LOG] Computing Eigenvector Centrality on cuda...
+--> [LOG] Converged at iteration 47
+--> [LOG] Eigenvector calculation took 0.3885s
+--> [LOG] Applying Local Top-52 Sparsification...
+
+========================================
+      LOCAL TOP-52 SUMMARY
+========================================
+Original Graph:  Nodes: 2449029    Edges: 61859076  
+Sparsified Graph: Nodes: 2449029    Edges: 34238660  
+Strategy:        Each node kept up to 52 neighbors based on Eigen Centrality.
+========================================
+
+--> Training GCN on ogbn-products_local_top52_eigen.dgl...
+--- OGBN-PRODUCTS EXPERIMENT COMPLETE ---
